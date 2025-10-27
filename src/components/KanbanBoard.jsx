@@ -22,10 +22,10 @@ function Card({ id, title, description, priority }){
       style={style} 
       {...attributes} 
       {...listeners} 
-      className={`p-3 rounded-lg bg-white border-l-4 ${getPriorityColor(priority)} border border-gray-200 shadow-sm cursor-grab hover:shadow-md transition-shadow`}
+      className={`p-3 rounded-lg bg-white dark:bg-gray-800 border-l-4 ${getPriorityColor(priority)} border border-gray-200 dark:border-gray-600 shadow-sm cursor-grab hover:shadow-md transition-shadow`}
     >
-      <div className='text-sm font-medium text-gray-900'>{title}</div>
-      <div className='text-xs text-gray-500 mt-1'>{description}</div>
+      <div className='text-sm font-medium text-gray-900 dark:text-white'>{title}</div>
+      <div className='text-xs text-gray-500 dark:text-gray-400 mt-1'>{description}</div>
       <div className='flex items-center justify-between mt-2'>
         <span className={`text-xs px-2 py-1 rounded-full ${
           priority === 'high' ? 'bg-red-100 text-red-800' :
@@ -130,9 +130,9 @@ export default function KanbanBoard(){
     <DndContext collisionDetection={closestCenter} onDragEnd={handleDragEnd}>
       <div className='grid md:grid-cols-3 gap-4'>
         {columnConfig.map((column) => (
-          <div key={column.id} className='p-4 rounded-xl border border-gray-200 bg-white/60'>
-            <div className='font-semibold mb-3 text-gray-800'>{column.title}</div>
-            <div className='text-sm text-gray-500 mb-4'>{column.items.length} tasks</div>
+          <div key={column.id} className='p-4 rounded-xl border border-gray-200 dark:border-gray-600 bg-white/60 dark:bg-gray-800/60'>
+            <div className='font-semibold mb-3 text-gray-800 dark:text-white'>{column.title}</div>
+            <div className='text-sm text-gray-500 dark:text-gray-400 mb-4'>{column.items.length} tasks</div>
             <SortableContext items={column.items.map(item => item.id)} strategy={rectSortingStrategy}>
               <div className='grid gap-2 min-h-[200px]'>
                 {column.items.map((item) => (

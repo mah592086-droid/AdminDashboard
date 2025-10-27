@@ -74,7 +74,7 @@ const getActivityColor = (type) => {
 
 export default function Activity() {
   return (
-    <div className="p-6 space-y-6 bg-gray-50 min-h-screen">
+    <div className="p-6 space-y-6 bg-gray-50 dark:bg-gray-900 min-h-screen">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -83,8 +83,8 @@ export default function Activity() {
       >
         {/* Header */}
         <div>
-          <h1 className="text-2xl font-bold text-gray-900">Activity Log</h1>
-          <p className="text-gray-600">Monitor system activities and events</p>
+          <h1 className="text-2xl font-bold text-gray-900 dark:text-white">Activity Log</h1>
+          <p className="text-gray-600 dark:text-gray-300">Monitor system activities and events</p>
         </div>
 
         {/* Stats Cards */}

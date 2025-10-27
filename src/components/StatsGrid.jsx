@@ -50,7 +50,7 @@ export default function StatsGrid({ stats }) {
             y: -2,
             transition: { duration: 0.2 }
           }}
-          className="relative bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group"
+          className="relative bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group"
         >
           {/* Gradient Background */}
           <div className={`absolute inset-0 bg-gradient-to-br ${getGradientColors(index)} opacity-0 group-hover:opacity-5 transition-opacity duration-300`} />
@@ -85,7 +85,7 @@ export default function StatsGrid({ stats }) {
                 initial={{ opacity: 0, x: -10 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.2 + index * 0.1 }}
-                className="text-sm font-medium text-gray-600"
+                className="text-sm font-medium text-gray-600 dark:text-gray-400"
               >
                 {stat.name}
               </motion.p>
@@ -93,7 +93,7 @@ export default function StatsGrid({ stats }) {
                 initial={{ opacity: 0, x: -10 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.3 + index * 0.1 }}
-                className="text-3xl font-bold text-gray-900"
+                className="text-3xl font-bold text-gray-900 dark:text-white"
               >
                 {stat.value}
               </motion.p>

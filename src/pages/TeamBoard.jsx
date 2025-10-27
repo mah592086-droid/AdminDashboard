@@ -60,7 +60,7 @@ export default function TeamBoard() {
     setTeamMembers([...teamMembers, newMember]);
   };
   return (
-    <div className="p-6 space-y-6 bg-gray-50 min-h-screen">
+    <div className="p-6 space-y-6 bg-gray-50 dark:bg-gray-900 min-h-screen">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -70,8 +70,8 @@ export default function TeamBoard() {
         {/* Header */}
         <div className="flex justify-between items-center">
           <div>
-            <h1 className="text-2xl font-bold text-gray-900">Team Board</h1>
-            <p className="text-gray-600">Manage your team members and their information</p>
+                <h1 className="text-2xl font-bold text-gray-900 dark:text-white">Team Board</h1>
+                <p className="text-gray-600 dark:text-gray-300">Manage your team members and their information</p>
           </div>
           <motion.button
             whileHover={{ scale: 1.05 }}
@@ -93,7 +93,7 @@ export default function TeamBoard() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white rounded-lg shadow p-6 hover:shadow-lg transition-shadow"
+                  className="bg-white dark:bg-gray-800 rounded-lg shadow p-6 hover:shadow-lg transition-shadow"
             >
               <div className="flex items-center space-x-4 mb-4">
                 <div className="relative">
@@ -107,30 +107,30 @@ export default function TeamBoard() {
                     member.status === 'away' ? 'bg-yellow-500' : 'bg-gray-400'
                   }`} />
                 </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900">{member.name}</h3>
-                  <p className="text-sm text-gray-600">{member.role}</p>
-                </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-gray-900 dark:text-white">{member.name}</h3>
+                      <p className="text-sm text-gray-600 dark:text-gray-300">{member.role}</p>
+                    </div>
               </div>
 
               <div className="space-y-3">
-                <div className="flex items-center space-x-3 text-sm text-gray-600">
+                <div className="flex items-center space-x-3 text-sm text-gray-600 dark:text-gray-300">
                   <EnvelopeIcon className="h-4 w-4" />
                   <span>{member.email}</span>
                 </div>
-                <div className="flex items-center space-x-3 text-sm text-gray-600">
+                <div className="flex items-center space-x-3 text-sm text-gray-600 dark:text-gray-300">
                   <PhoneIcon className="h-4 w-4" />
                   <span>{member.phone}</span>
                 </div>
-                <div className="flex items-center space-x-3 text-sm text-gray-600">
+                <div className="flex items-center space-x-3 text-sm text-gray-600 dark:text-gray-300">
                   <MapPinIcon className="h-4 w-4" />
                   <span>{member.location}</span>
                 </div>
               </div>
 
-              <div className="mt-4 pt-4 border-t border-gray-200">
+              <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-600">
                 <div className="flex items-center justify-between">
-                  <span className="text-xs text-gray-500">Status</span>
+                  <span className="text-xs text-gray-500 dark:text-gray-400">Status</span>
                   <span className={`text-xs px-2 py-1 rounded-full ${
                     member.status === 'online' ? 'bg-green-100 text-green-800' :
                     member.status === 'away' ? 'bg-yellow-100 text-yellow-800' : 'bg-gray-100 text-gray-800'

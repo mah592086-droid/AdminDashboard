@@ -135,7 +135,7 @@ export default function UserManagement() {
   };
 
   return (
-    <div className="p-6 space-y-6 bg-gray-50 min-h-screen">
+    <div className="p-6 space-y-6 bg-gray-50 dark:bg-gray-900 min-h-screen">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -145,8 +145,8 @@ export default function UserManagement() {
         {/* Header */}
         <div className="flex justify-between items-center">
           <div>
-            <h1 className="text-2xl font-bold text-gray-900">User Management</h1>
-            <p className="text-gray-600">Manage user accounts, roles, and permissions</p>
+                <h1 className="text-2xl font-bold text-gray-900 dark:text-white">User Management</h1>
+                <p className="text-gray-600 dark:text-gray-300">Manage user accounts, roles, and permissions</p>
           </div>
           <motion.button
             whileHover={{ scale: 1.05 }}
