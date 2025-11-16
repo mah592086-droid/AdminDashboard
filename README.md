@@ -1,26 +1,32 @@
-# AdminDashboard
+# SocialPulse - Social Media Analytics Dashboard
 
-A modern React-based admin dashboard built with Vite, featuring 3D elements, animations, and a responsive design.
+A comprehensive social media analytics dashboard for managing posts, comments, moderation, and real-time engagement metrics. Built with React 19 and featuring advanced animations, interactive charts, and a modern glassmorphic design.
 
 ## Features
 
-- 🎭 **Framer Motion Animations** - Smooth, professional animations throughout
-- 🎨 **3D Elements** - Interactive 3D cubes and scenes using Three.js
-- 📱 **Fully Responsive** - Looks great on all devices
-- 🌈 **Modern Design** - Glassmorphism effects and gradient backgrounds
-- ⚡ **Fast Performance** - Built with Vite for optimal speed
-- 🎯 **SEO Optimized** - Meta tags and structured data ready
-- 🛠️ **Easy Customization** - Component-based architecture for easy modification
+- 📊 **Social Media Analytics** - Real-time metrics for DAU, impressions, engagement, and follower growth
+- 📱 **Feed Management** - Create, view, like, comment, and delete posts from all users
+- 🛡️ **Content Moderation** - Review and manage reported content with severity-based filtering
+- 📈 **Advanced Charts** - Interactive area charts, donut charts, and heatmaps using ECharts
+- 💬 **Comment System** - Threaded comments with full moderation capabilities
+- 🎨 **Modern UI/UX** - Glassmorphic design with gradient accents and smooth animations
+- 🌓 **Dark Mode** - Seamless theme switching with persistent preferences
+- ⚡ **Performance Optimized** - Built with Vite and React 19 for lightning-fast performance
+- 📱 **Fully Responsive** - Mobile-first design that works beautifully on all devices
+- 🎭 **Framer Motion** - Advanced animations and micro-interactions throughout
 
 ## Tech Stack
 
-- **React 19** - UI framework
-- **Vite** - Build tool and dev server
-- **Tailwind CSS** - Styling
-- **Framer Motion** - Animations
-- **Three.js** - 3D graphics
-- **React Three Fiber** - React Three.js integration
-- **React Helmet** - SEO management
+- **React 19** - Latest React with concurrent features
+- **Vite** - Lightning-fast build tool and dev server
+- **Tailwind CSS** - Utility-first styling with custom design system
+- **Framer Motion** - Advanced animations and transitions
+- **ECharts** - Interactive data visualization (area, donut, heatmap charts)
+- **React Router DOM** - Client-side routing with nested routes
+- **Zustand** - Lightweight state management
+- **Lucide React** - Modern icon library
+- **Heroicons** - Beautiful SVG icons
+- **Headless UI** - Accessible component primitives
 
 ## Getting Started
 
